@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView_CartOrderImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/food" />
+
+        <TextView
+            android:id="@+id/textView_OrderType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Food"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView_CartOrderImg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_OrderDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:text="Vyonne Spicy Fries, 2 litre coke soda"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/numberPicker"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView_OrderType"
+            app:layout_constraintTop_toBottomOf="@+id/textView_OrderType" />
+
+        <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+            android:id="@+id/numberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:snp_maxValue="10"
+            app:snp_minValue="1"
+            app:snp_stepSize="1"
+            app:snp_buttonTouchScaleFactor="4.0"
+            app:snp_value="1"
+            app:snp_orientation="vertical"
+            app:snp_valueMarginEnd="5dp"
+            app:snp_valueMarginStart="5dp"
+            app:snp_value_text_size="24sp"
+            app:snp_value_text_appearance="?android:attr/textAppearanceLarge"
+            app:snp_buttonPaddingTop="8dp"
+            app:snp_buttonPaddingBottom="8dp"
+            app:snp_buttonPaddingLeft="8dp"
+            app:snp_buttonPaddingRight="8dp"
+            android:background="@drawable/number_picker_bg_color"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_From"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:text="From : Kapsabet"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toStartOf="@+id/numberPicker"
+            app:layout_constraintStart_toStartOf="@+id/textView_OrderDesc"
+            app:layout_constraintTop_toBottomOf="@+id/textView_OrderDesc" />
+
+        <TextView
+            android:id="@+id/textView_To"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/colorAccent"
+            android:text="To : Ladies Dorm"
+            app:layout_constraintStart_toStartOf="@+id/textView_From"
+            app:layout_constraintTop_toBottomOf="@+id/textView_From" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

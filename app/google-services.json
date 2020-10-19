@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "778536017996",
+    "firebase_url": "https://fikisha-e6c61.firebaseio.com",
+    "project_id": "fikisha-e6c61",
+    "storage_bucket": "fikisha-e6c61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778536017996:android:472822a9752ae6a61094e9",
+        "android_client_info": {
+          "package_name": "com.example.fikisha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778536017996-u5heq2ij9jn4n82meop9srpelosm3sjl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fikisha",
+            "certificate_hash": "249778b63fcbb1386259d18b1434e148c1893c29"
+          }
+        },
+        {
+          "client_id": "778536017996-p0rfhr4tliv63dhum9u1rcj1b5uq833v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDl4cb40H3FNkkFsgEqWRQyOY2H3AmnJDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778536017996-p0rfhr4tliv63dhum9u1rcj1b5uq833v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

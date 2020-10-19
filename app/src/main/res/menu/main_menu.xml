@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/orders"
+        android:icon="@drawable/orders"
+        android:iconTint="#fff"
+        app:showAsAction="always"
+        android:title="My Orders" />
+    <item
+        android:id="@+id/logout"
+        android:title="Log out" />
+    <item
+        android:id="@+id/settings"
+        android:title="Settings" />
+</menu>
