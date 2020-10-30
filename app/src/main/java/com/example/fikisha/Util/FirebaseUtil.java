@@ -32,12 +32,9 @@ public class FirebaseUtil {
             mFirebaseAuth = FirebaseAuth.getInstance();
             caller = callerActivity;
 
-            mAuthListener = new FirebaseAuth.AuthStateListener() {
-                @Override
-                public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                    if (firebaseAuth.getCurrentUser() == null) {
-                        FirebaseUtil.signIn();
-                    }
+            mAuthListener = firebaseAuth -> {
+                if (firebaseAuth.getCurrentUser() == null) {
+                    FirebaseUtil.signIn();
                 }
             };
         }
