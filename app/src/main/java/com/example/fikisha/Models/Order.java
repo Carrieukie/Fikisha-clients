@@ -17,9 +17,13 @@ public class Order {
     private String delivered;
     private String paid;
     private int cartNumber;
+    private String costs;
 
+    public String getCosts() {
+        return costs;
+    }
 
-    public Order(String type ,String from, String to, String description) {
+    public Order(String type , String from, String to, String description) {
         this.type = type;
         this.from = from;
         this.to = to;
@@ -167,5 +171,9 @@ public class Order {
             }
         }
         this.cartNumber = num + 1;
+    }
+
+    public void setCosts(String costs) {
+        this.costs = costs;
     }
 }

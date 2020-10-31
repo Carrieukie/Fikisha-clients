@@ -42,6 +42,7 @@ public class Food  extends Order{
 
     public void setTotalPrice() {
         this.totalPrice =String.valueOf(Integer.valueOf(quantity) * Integer.valueOf(price));
+        super.setCosts(String.valueOf(Integer.valueOf(quantity) * Integer.valueOf(price)));
     }
 
     public String getTitle() {

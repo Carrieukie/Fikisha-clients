@@ -38,7 +38,9 @@ public class FooditemAdapter extends RecyclerView.Adapter<FooditemAdapter.ViewHo
             @Override
             public void onClick(View v) {
                 if (cartViewModel!=null){
-                    cartViewModel.AddCartValue(foodArrayList.get(position));
+                    Food food = foodArrayList.get(position);
+                    food.setDescription(food.getTitle());
+                    cartViewModel.AddCartValue(food);
                 }
                 holder.itemView.getContext().startActivity(new Intent(holder.itemView.getContext(), CartActivity.class));
 

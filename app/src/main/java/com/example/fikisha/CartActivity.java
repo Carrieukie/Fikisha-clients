@@ -81,7 +81,7 @@ public class CartActivity extends AppCompatActivity {
         cartViewModel.getAllOrderArrayList().observe(this, new Observer<ArrayList<Order>>() {
             @Override
             public void onChanged(ArrayList<Order> orders) {
-                if (orders.size() == 0){
+                if (orders == null){
                     hasOrders.setVisibility(View.GONE);
                     hasNoOrders.setVisibility(View.VISIBLE);
                 }else {
@@ -191,7 +191,6 @@ public class CartActivity extends AppCompatActivity {
                 cartViewModel.removeallOrders();
                 progressBar.setVisibility(View.INVISIBLE);
                 startActivity(new Intent(getApplicationContext(), MyOrdersActivity.class));
-                makeNotification();
                 finish();
             }
         });

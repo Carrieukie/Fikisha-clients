@@ -41,7 +41,6 @@ public class Cart {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-
     public void setItems(String items) {
         this.items = items;
     }
